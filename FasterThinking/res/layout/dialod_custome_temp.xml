@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="#ffffff"
+    android:layout_height="wrap_content" >
+ 
+    <!-- コンテンツ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="20dp"
+        android:background="@drawable/bg_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+ 
+        <!-- タイトル -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         	 android:gravity="center_horizontal"
+            android:text="About Us"
+            android:textSize="25sp"
+            android:typeface="serif"
+            android:layout_marginTop="10sp"
+			android:textStyle="bold|italic"
+            android:textColor="#006789"
+            />
+            
+        </RelativeLayout>
+
+        
+ 
+        <!-- メッセージ -->
+
+        <ImageView
+            android:id="@+id/imgdialog"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_margin="10sp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="BoxOpen Team"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="10sp"
+            android:textColor="#006789"
+            />
+        
+        
+ 
+        <!-- OK ボタン -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:lineSpacingExtra="6dp"
+                android:text="Wrong is Right ! Choose the incorrect answer . Let's see , how many score you'll got , better or worse than your friend.\nContac us : boxopen@gmail.com.\nEnjoy and share this game."
+                android:textColor="#333333"
+                android:textSize="18sp" />
+            
+        </RelativeLayout>
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:weightSum="2"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/positive_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_dialog"
+                android:text="Share this game"
+                android:textColor="#006789" />
+
+        </LinearLayout>
+ 
+    </LinearLayout>
+ 
+    <!-- Close ボタン -->
+ 
+</RelativeLayout>

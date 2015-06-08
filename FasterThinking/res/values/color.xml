@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="hoido">#FF5252</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="blue">#2196F3</color>
+    <color name="xanhdam">#1A237E</color>
+    <color name="teal">#009688</color>
+    <color name="teal2">#009688</color>
+    <color name="green">#4CAF50</color>
+    <color name="green2">#388E3C</color>
+    <color name="grey">#616161</color>
+    <color name="blugrey">#607D8B</color>
+    <color name="blugrey2">#607D8B</color>
+    <color name="android">#8BC34A</color>
+    <color name="xanhnhat">#00BBD2</color>
+ <color name="transparent" >#00000000</color>
+</resources>

@@ -1,0 +1,109 @@
+<LinearLayout 
+      xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="4"
+    android:background="@color/blugrey2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_weight="0"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:text="Time : 4"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Score: 10"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+         >
+
+        <ImageView
+            android:id="@+id/imgPlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"     
+            android:padding="3sp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/cau1_1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="2"
+         >
+
+        <ImageView
+            android:id="@+id/imgMath"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2sp"
+            android:layout_weight="1"
+            android:padding="5sp"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/cau2_2" />
+
+        <ImageView
+            android:id="@+id/imgEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2sp"
+            android:layout_weight="1"
+            android:padding="5sp"
+            android:scaleType="fitXY"
+            
+            android:src="@drawable/cau2_1" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical" >
+        
+    <!--       <com.google.android.gms.ads.AdView
+                android:id="@+id/adver2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                android:layout_weight="0"
+                ads:adUnitId="ca-app-pub-6056707742967466/4903302636" >
+            </com.google.android.gms.ads.AdView>  -->
+            
+    </LinearLayout>
+
+    
+
+</LinearLayout>

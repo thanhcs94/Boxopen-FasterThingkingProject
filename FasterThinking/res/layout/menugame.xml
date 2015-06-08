@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_start"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgPlay"
+        android:layout_alignTop="@+id/imgMath"
+        android:layout_marginLeft="55dp"
+        android:src="@drawable/btenglish" />
+
+    <ImageView
+        android:id="@+id/imgMath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imgPlay"
+        android:layout_below="@+id/imgPlay"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/btmath" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <!--
+             <com.google.android.gms.ads.AdView
+                android:id="@+id/adver"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-6056707742967466/4903302636" >
+            </com.google.android.gms.ads.AdView>
+        -->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5sp"
+        android:layout_weight="0"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/btsetting"
+            android:layout_width="55sp"
+            android:layout_height="55sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/setting" />
+
+        <ImageButton
+            android:id="@+id/btnshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+              android:layout_marginRight="5sp"
+            android:layout_toLeftOf="@+id/btinfor"
+            android:background="@drawable/sharef" />
+
+        <ImageButton
+            android:id="@+id/btmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="75dp"
+            android:layout_marginLeft="5sp"
+            android:layout_toRightOf="@+id/btinfor"
+            android:background="@drawable/plus" />
+
+        <ImageButton
+            android:id="@+id/btinfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/inf" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btspeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5sp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/speakon"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imgPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/btstart" />
+
+</RelativeLayout>

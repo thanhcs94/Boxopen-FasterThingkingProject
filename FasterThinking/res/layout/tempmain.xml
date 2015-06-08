@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/btstart" />
+
+    <ImageView
+        android:id="@+id/imgEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgPlay"
+        android:layout_alignTop="@+id/imgMath"
+        android:layout_marginLeft="55dp"
+        android:src="@drawable/btenglish" />
+
+    <ImageView
+        android:id="@+id/imgMath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imgPlay"
+        android:layout_below="@+id/imgPlay"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/btmath" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0"
+        android:background="#ffffff"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/btinfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btninfor" />
+
+        <ImageButton
+            android:id="@+id/btnshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btinfor"
+            android:layout_marginRight="10sp"
+            android:layout_toLeftOf="@+id/btinfor"
+            android:background="@drawable/btnshare" />
+
+        <ImageButton
+            android:id="@+id/btmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btinfor"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@+id/btinfor"
+            android:background="@drawable/btnmore" />
+
+        <ImageButton
+            android:id="@+id/btspeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/speaker"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adver"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-6056707742967466/4903302636" >
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btsetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:src="@drawable/banner" />
+
+</RelativeLayout>
