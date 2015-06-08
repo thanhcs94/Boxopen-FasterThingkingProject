@@ -55,6 +55,7 @@ public class MainActivity extends Activity {
 	Animation animAlpha;
 	Animation animScale;
 	Animation animRotate;
+	int lololo = 0;//just for test in github , remove it/
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -64,7 +65,7 @@ public class MainActivity extends Activity {
 //		adView.loadAd(new AdRequest.Builder()
 //		.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)   
 //		.addTestDevice("B3EEABB8EE11C2BE770B684D95219ECB").build());
-		
+//this line for test github		
 		
 		CHECK_END_TIME=0;
 		llRoot = (LinearLayout)findViewById(R.id.root); 
